@@ -20,7 +20,7 @@ apt update && apt install filebeat -y
 log "Configuration de Filebeat pour envoyer les journaux à Logstash..."
 cat <<EOF > /etc/filebeat/filebeat.yml
 output.logstash:
-  hosts: ["your_logstash_server_ip:5044"]
+  hosts: ["172.16.50.78:5044"]
 EOF
 
 log "Activation des modules Filebeat (system)..."
