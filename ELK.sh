@@ -60,7 +60,7 @@ apt install kibana -y
 log "Configuration de Kibana..."
 cat <<EOF > /etc/kibana/kibana.yml
 server.port: 5601
-server.host: "0.0.0.0"
+server.host: "172.16.50.78"
 elasticsearch.hosts: ["http://localhost:9200"]
 EOF
 
